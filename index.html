@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花草feifei</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!-- 引入 Google 字体 -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .logo {
+            margin-left: 20px; /* 左边距 */
+            flex-grow: 1;
+            text-align: left; /* 靠左对齐 */
+            font-size: 48px;
+            font-weight: bold;
+            font-family: 'Great Vibes', cursive; /* 使用引入的字体 */
+            color: #F6B7C1; /* 莫兰迪风格粉色 */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+            
+        }
+        .social-links a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .images img {
+            width: 200px; /* 可以根據需要調整 */
+            height: 200px; /* 可以根據需要調整 */
+            margin: 0 10px;
+            }
+
+            .images1 {
+            display: flex;
+            justify-content: center;
+            width: 100px; /* 可以根據需要調整 */
+            height: 100px; /* 可以根據需要調整 */
+            margin: 0 10px;
+            }
+        .dropdowns {
+            margin: 20px 0;
+        }
+        .dropdowns select {
+            margin: 0 10px;
+            padding: 10px;
+            outline: none; /* 去除选中时的轮廓 */
+            background-color: #f8f8f8; /* 可选：设置背景颜色 */
+            border-radius: 5px; /* 可选：添加圆角 */
+        }
+
+        .footer {
+         padding: 0 20%; /* 左右各留20%的空白 */
+         background-color: #f9f9f9;
+        }
+
+        .footer-info {
+            display: flex; /* 使用 Flexbox */
+            justify-content: space-between; /* 左右分配空间 */
+            align-items: center; /* 垂直居中对齐 */
+            text-align: left;
+        }
+
+        .map-container {
+          width: 50%; /* 地图容器宽度 */
+         height: 150px; /* 根据需要调整高度 */
+         overflow: hidden; /* 隐藏溢出内容 */
+         
+            }
+
+        .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0; /* 去除边框 */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+
+    <div class="images1">
+        <img src="mark.jpg" alt="店標"></div>
+    <div class="logo"><i>花草feifei</i></div>
+    
+
+    <div class="dropdowns">
+        <select>
+            <option value="">花藝種類</option>
+            <option value="type1">祝福、感謝</option>
+            <option value="type2">生日、周年紀念</option>
+            <option value="type2">求婚、表白/option>
+            <option value="type2">節慶</option>
+            <option value="type2">開張、喬遷</option>
+        </select>
+        <select>
+            <option value="">教學課程</option>
+            <option value="teaching1">教學1</option>
+            <option value="teaching2">教學2</option>
+        </select>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61556129413714" target="_blank">FB</a>
+        <a href="https://www.instagram.com/huatsaofeifei/" target="_blank">Instagram</a>
+    </div>
+
+
+
+
+
+</header>
+
+
+
+<div class="images">
+    <img src="./1.jpg" alt="圖片1">
+    <img src="./2.jpg" alt="圖片2">
+    <img src="./3.jpg" alt="圖片3">
+    <img src="./IMG_0627.jpg" alt="圖片4">
+    <img src="./IMG_0628.jpeg" alt="圖片5">
+    <img src="./IMG_0626.jpg" alt="圖片6">
+</div>
+
+
+
+<footer class="footer">
+    <div class="footer-info">
+        <div>
+            <div>🌹法國AAFF Niveau III高級證照</div>
+            <div>🌷日本AUBE 不凋花協會證書/講師資格</div>
+            <div>🚚服務範圍：雙北、桃園地區</div>
+            <div>🏡門市資訊: 新北市林口區南勢四街196巷17號, New Taipei City 244</div>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9106.330018627279!2d121.3537992533171!3d25.073089212784648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7e0e9cd0d4b%3A0xc537d2f72ff8a850!2z6Iqx6I2JZmVpIGZlaeiKseiXneW3peS9nOWupA!5e0!3m2!1szh-TW!2stw!4v1730341059051!5m2!1szh-TW!2stw" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
+    </div>
+</footer>
+
+
+
+
+</footer>
+
+</body>
+</html>
