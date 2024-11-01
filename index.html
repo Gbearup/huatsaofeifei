@@ -115,15 +115,20 @@
     }
     
     .logo {
-        font-size: 36px; /* 在小屏幕上調整字體大小 */
-        margin-left: 0; /* 移除左邊距 */
-        margin-bottom: 10px; /* 與上方元素的間距 */
+        font-size: 20px; /* 調整字體大小 */
+        margin-bottom: 10px; /* 與其他元素的間距 */
     }
 
     .dropdowns {
-        width: 100%; /* 下拉框佔滿整行 */
+        width: 100%; /* 滿版 */
+        flex-direction: column; /* 垂直排列 */
         margin-bottom: 10px; /* 與社交鏈接的間距 */
     }
+
+    .dropdowns select {
+        width: 100%; /* 下拉式選單滿版 */
+        margin-bottom: 10px; /* 下拉框之間的間距 */
+
     .social-links {
         width: 100%; /* 讓社交連結滿版 */
         justify-content: space-between; /* 平均分配空間 */
