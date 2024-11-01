@@ -13,7 +13,14 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            display: flex; /* 使用 flexbox */
+            flex-direction: column; /* 垂直排列 */
+            min-height: 100vh; /* 讓 body 最小高度為 100vh */
         }
+        .content {
+         flex: 1; /* 讓主內容區域填滿剩餘空間 */
+         }
+
         header {
             display: flex;
             flex-wrap: wrap; /* 允許元素在小屏幕上換行 */
@@ -144,16 +151,12 @@
     .dropdowns select {
         width: 100%; /* 下拉式選單滿版 */
         margin-bottom: 10px; /* 下拉框之間的間距 */
-
+    }
     .social-links {
         width: 100%; /* 讓社交連結滿版 */
         justify-content: space-between; /* 平均分配空間 */
     }
-
 }
-
-
-
 
     </style>
 </head>
@@ -194,23 +197,19 @@
             <i class="fab fa-instagram"></i>
         </a>
     </div>
-
-
-
-
 </header>
 
 
-
-<div class="images">
-    <img src="./1.jpg" alt="圖片1">
-    <img src="./2.jpg" alt="圖片2">
-    <img src="./3.jpg" alt="圖片3">
-    <img src="./IMG_0627.jpg" alt="圖片4">
-    <img src="./IMG_0628.jpeg" alt="圖片5">
-    <img src="./IMG_0626.jpg" alt="圖片6">
+<div class="content">     
+    <div class="images">
+         <img src="./1.jpg" alt="圖片1">
+            <img src="./2.jpg" alt="圖片2">
+         <img src="./3.jpg" alt="圖片3">
+            <img src="./IMG_0627.jpg" alt="圖片4">
+            <img src="./IMG_0628.jpeg" alt="圖片5">
+         <img src="./IMG_0626.jpg" alt="圖片6">
+    </div>
 </div>
-
 
 
 <footer class="footer">
