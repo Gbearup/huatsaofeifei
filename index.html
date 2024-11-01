@@ -39,13 +39,17 @@
             display: inline-block;
             justify-content: center;
             margin: 20px 0;
+            width: 100%; /* 確保父容器寬度滿版 */
+            overflow: hidden; /* 隱藏溢出的內容 */
         }
         .images img {
-            width: 200px; /* 可以根據需要調整 */
-            height: 200px; /* 可以根據需要調整 */
-            margin: 0 10px;
+            width: 100%; /* 圖片在手機上滿版寬度 */
+            height: auto; /* 自動調整高度以保持比例 */
+            margin: 0 0; /* 移除左右邊距 */     
             }
-
+            /* width: 200px; /* 可以根據需要調整 */
+            /* height: 200px; /* 可以根據需要調整 */
+            /* margin: 0 10px; */ 
             .images1 {
             display: flex;
             justify-content: center;
