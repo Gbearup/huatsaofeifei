@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>花草feifei</title>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> <!-- 引入 Google 字体 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -32,11 +33,25 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* 添加阴影 */
             
         }
-        .social-links a {
-            margin-left: 15px;
-            text-decoration: none;
-            color: #333;
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
         }
+        .social-icons a {
+            text-decoration: none;
+            font-size: 24px; /* 圖標大小 */
+        }
+        .line-icon {
+            color: #00C300; /* Line 的綠色 */
+        }
+        .facebook-icon {
+            color: #3b5998; /* Facebook 的藍色 */
+        }
+        .instagram-icon {
+            color: #C13584; /* Instagram 的紫色 */
+        }
+
         .images {
             display: inline-block;
             justify-content: center;
@@ -168,18 +183,17 @@
     </div>
 
 
-
-
-
-
-
-
-    <div class="social-links">
-        <a href="https://www.facebook.com/profile.php?id=61556129413714" target="_blank">FB</a>
-        <a href="https://www.instagram.com/huatsaofeifei/" target="_blank">Instagram</a>
-        <a href="https://line.me/R/ti/p/@287lkmtd" target="_blank">Line</a>
+    <div class="social-icons">
+        <a href="https://line.me/R/ti/p/@287lkmtd" target="_blank" title="Line" class="line-icon">
+            <i class="fab fa-line"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61556129413714" target="_blank" title="Facebook" class="facebook-icon">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/huatsaofeifei/" target="_blank" title="Instagram" class="instagram-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
     </div>
-
 
 
 
