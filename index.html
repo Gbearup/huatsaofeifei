@@ -15,6 +15,7 @@
         }
         header {
             display: flex;
+            flex-wrap: wrap; /* 允許元素在小屏幕上換行 */
             justify-content: space-between;
             align-items: center;
             padding: 20px;
@@ -22,7 +23,7 @@
         }
         .logo {
             margin-left: 20px; /* 左边距 */
-            flex-grow: 1;
+            flex-grow: 1;  /* 讓 logo 自動填充空間 */
             text-align: left; /* 靠左对齐 */
             font-size: 48px;
             font-weight: bold;
@@ -51,9 +52,9 @@
             .images1 {
             display: flex;
             justify-content: center;
-            width: 100px; /* 可以根據需要調整 */
-            height: 100px; /* 可以根據需要調整 */
-            margin: 0 10px;
+            width: 100px; 
+            height: 100px; 
+            margin: 0 10px; 
             }
         .dropdowns {
             margin: 20px 0;
@@ -106,8 +107,25 @@
     .images img {
         width: 100%; /* 手機上滿版寬度 */
         height: auto; /* 自動調整高度以保持比例 */
+        margin: 0; /* 移除邊距 */
+    }
+    header {
+        flex-direction: column; /* 在小屏幕上垂直排列 */
+        align-items: flex-start; /* 左對齊 */
+    }
+    
+    .logo {
+        font-size: 36px; /* 在小屏幕上調整字體大小 */
+        margin-left: 0; /* 移除左邊距 */
+        margin-bottom: 10px; /* 與上方元素的間距 */
+    }
+
+    .dropdowns {
+        width: 100%; /* 下拉框佔滿整行 */
+        margin-bottom: 10px; /* 與社交鏈接的間距 */
     }
 }
+
 
 
 
